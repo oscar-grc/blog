@@ -1,0 +1,29 @@
+html, body{
+    padding: 0;
+    margin:0;
+    background: #ececec;
+}
+
+header{
+    background: #fff;
+    padding:1em 1em 0.2em;
+    box-sizing: border-box;
+    margin: 0;
+    box-shadow: rgba(0,0,0,0.5);
+}
+header h1{
+    border-bottom:solid 1px #cecece;
+    font-size: 1.4em;
+    padding-bottom: 1em;
+}
+header h2{
+    font-size: 1.1em;
+}
+
+main{
+    background: #fff;
+    margin:1em;
+    padding:1em;
+    border-radius: 5px;
+    box-shadow: rgba(5,5,5,0.5);
+}
