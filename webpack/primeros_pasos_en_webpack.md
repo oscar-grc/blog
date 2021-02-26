@@ -12,9 +12,9 @@
 *Recuerda que este tutorial forma parte de una cadena de tutoriales que puedes encontrar en los siguientes enlaces:*
 
 - **Primeros pasos en webpack**
-- [Aprendiendo a usar loaders en webpack](https://github.com/oscar-grc/blog/blob/articles/aprendiendo_a_usar_loaders.md)
-- [Extendiendo la funcionalidad de webpack](https://github.com/oscar-grc/blog/blob/articles/extendiendo_la_funcionalidad_de_webpack.md)
-- [Implementando hot reload en nuestras aplicaciones](https://github.com/oscar-grc/blog/blob/articles/implementando_hot_reload_en_nuestras_aplicaciones_con_webpack.md) 	
+- [Aprendiendo a usar loaders en webpack](https://github.com/oscar-grc/blog/blob/articles/webpack/aprendiendo_a_usar_loaders.md)
+- [Extendiendo la funcionalidad de webpack](https://github.com/oscar-grc/blog/blob/articles/webpack/extendiendo_la_funcionalidad_de_webpack.md)
+- [Implementando hot reload en nuestras aplicaciones](https://github.com/oscar-grc/blog/blob/articles/webpack/implementando_hot_reload_en_nuestras_aplicaciones_con_webpack.md) 		
 
 ---
 
@@ -35,6 +35,7 @@
 - **Editor:** Visual Studio Code
 - **Webpack:** 5.21.2
 - **Webpack-cli:** 4.5.0
+- **Node JS:** v12.18.2
 - **NPM:** 6.14.5
 
 ---
@@ -144,6 +145,6 @@ Cuando `webpack` termina de transformar los datos, estos los empaquetará en un 
 
 Aunque fue un ejemplo sencillo en este primer acercamiento podemos ver la potencia y sencillez de esta herramienta, `webpack` nos ayuda a empaquetar de manera sencilla distintas tecnologías, frameworks, lenguajes o simples recursos. 
 
-Ahora ya puedes configurar tus proyectos con `webpack`, lo siguiente será aprender a utilizar loaders personalizados en el próximo articulo [Aprendiendo a usar loaders](https://github.com/oscar-grc/blog/blob/articles/aprendiendo_a_usar_loaders.md)
+Ahora ya puedes configurar tus proyectos con `webpack`, lo siguiente será aprender a utilizar loaders personalizados en el próximo articulo [Aprendiendo a usar loaders](https://github.com/oscar-grc/blog/blob/articles/webpack/aprendiendo_a_usar_loaders.md)
 
 si quieres profundizar más sobre `webpack` puedes ir al sitio oficial https://webpack.js.org/
