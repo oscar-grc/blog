@@ -8,17 +8,17 @@
 
 *Recuerda que este tutorial forma parte de una cadena de tutoriales que puedes encontrar en los siguientes enlaces:*
 
-- [Primeros pasos en webpack](https://github.com/oscar-grc/blog/blob/articles/primeros_pasos_en_webpack.md)
+- [Primeros pasos en webpack](https://github.com/oscar-grc/blog/blob/articles/webpack/primeros_pasos_en_webpack.md)
 - **Aprendiendo a usar loaders en webpack**
-- [Extendiendo la funcionalidad de webpack](https://github.com/oscar-grc/blog/blob/articles/extendiendo_la_funcionalidad_de_webpack.md)
-- [Implementando hot reload en nuestras aplicaciones](https://github.com/oscar-grc/blog/blob/articles/implementando_hot_reload_en_nuestras_aplicaciones_con_webpack.md) 
+- [Extendiendo la funcionalidad de webpack](https://github.com/oscar-grc/blog/blob/articles/webpack/extendiendo_la_funcionalidad_de_webpack.md)
+- [Implementando hot reload en nuestras aplicaciones](https://github.com/oscar-grc/blog/blob/articles/webpack/implementando_hot_reload_en_nuestras_aplicaciones_con_webpack.md) 
 
 ---
 
 ## Indice de contenidos:
 
 - [Entorno](#Entorno)
-- [¿Que son los loaders?](#¿que-son-los-loaders?)
+- [¿Que son los loaders?](#¿Que-son-los-loaders?)
 - [Cargando nuestro primer loader](#cargando-loader)
 - [CSS loaders](#css-loaders)
 - [Conclusiones](#Conclusiones)
@@ -166,14 +166,14 @@ Como podemos observar, en este caso que el tipo de archivo es diferente de javas
 
 Una vez que lanzamos el comando ``npm run build``  podemos ver que webpack comienza a realizar el empaquetado y si todo sale bien podremos ver el siguiente mensaje.
 
-![Aprendiendo a usar loaders terminal]()
+![Aprendiendo a usar loaders terminal](https://ninjaaprendiendo.s3.us-east-2.amazonaws.com/articulos/aprendiendo-a-usar-loaders-success.png)
 
 Nuevamente podemos ir a nuestro navegador, y veremos los estilos definidos.
 
-![Aprendiendo a usar CSS loaders]()
+![Aprendiendo a usar CSS loaders](https://ninjaaprendiendo.s3.us-east-2.amazonaws.com/articulos/aprendiendo-a-usar-loaders-mozilla.png)
 
 
-#### Conclusiones 
+## Conclusiones 
 
 
 Ahora ya puedes puedes empezar a incluir loaders en tus proyectos con `webpack`, lo siguiente será aprender a utilizar plugins en el próximo articulo [Extendiendo la funcionalidad de webpack](https://github.com/oscar-grc/blog/blob/articles/extendiendo_la_funcionalidad_de_webpack.md)
