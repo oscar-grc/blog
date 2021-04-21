@@ -24,6 +24,7 @@
 - [¿Que es Webpack?](#Que-es-Webpack)
 - [Instalando Webpack](#instalando-webpack)
 - [Configurando Webpack](#configurando-webpack)
+- [Primer bundle](#primer-bundle)
 - [¿Como funciona Webpack?](#como-funciona-webpack)
 - [Conclusiones](#Conclusiones)
 
@@ -130,6 +131,66 @@ module.exports = {
 ````
 
 En este caso nuestro archivo de entrada `index.js` esta en `src/` y nuestras salida se llamará `bundle.js` y se encontrará en la carpeta `dist/`
+
+## Primer Bundle
+
+Para nuestro primer bundle, utilizaremos la configuración que definimos previamente
+
+La estructura del proyecto es la siguiente:
+
+![Estructura del proyecto](https://ninjaaprendiendo.s3.us-east-2.amazonaws.com/articulos/primeros_pasos_primer_bundle_estructura_del_proyecto.png)
+
+para poder ver la funcionalidad de webpack generamos dos archivos JS, uno de ellos simplemente contiene una función que devuelve un mensaje de saludo y el otro como recordaremos el es punto de entrada para que webpack pueda resolver el grafo de dependeicas.
+
+**./src/grettings.js**
+``` JS
+export default function grettings(){
+    console.log("Hello World");
+}
+```
+**./src/index.js**
+``` JS
+import message from './grettings';
+
+message();
+```
+
+En este primer acercamiento y para mantener el ejercicio lo más sencillo posible, necesitaremos un archivo HTML donde podamos colocar el script generado y poder ver de forma más clara el funcionamiento. 
+
+EL bundle sera generado en la carpeta  ``dist`` que definimos en el archivo de configuración por lo que en la misma carpeta colocaremos el siguiente código.
+
+**./dist/index.html**
+``` html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Webpack</title>
+</head>
+<body>
+    <h1>Ejemplo Webpack básico</h1>
+    <script src="bundle.js" ></script>
+</body>
+</html>
+```
+
+y finalmente para poder empaquetar nuestro código utilizaremos el script de ``webpack`` que esta incluido en los ``node_modules`` cuando instalamos webpack-cli
+
+Nota:  *Es importante mencionar que debemos de estar en la carpeta raiz, para que webpack pueda encontrar el archivo config por defecto*
+
+``` 
+./node_modules/webpack/bin/webpack.js
+```
+Una vez que lanzamos el comando podemos ver que webpack comienza a realizar el empaquetado y si todo sale bien podremos ver el siguiente mensaje.
+
+![Ejemplo de primer bundle](https://ninjaaprendiendo.s3.us-east-2.amazonaws.com/articulos/primeros_pasos_webpack_terminal.png)
+
+Ahora podemos ir a nuestro navegador, y en la consola de desarrollo veremos el viejo amigo y siempre presente mensaje de ``Hola Mundo``
+
+![Ejemplo de primer bundle](https://ninjaaprendiendo.s3.us-east-2.amazonaws.com/articulos/primeros_pasos_primer_bundle_mozilla.png)
+
+
 
 ## ¿Como funciona Webpack?
 
