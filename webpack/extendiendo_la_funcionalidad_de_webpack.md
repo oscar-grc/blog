@@ -1,7 +1,7 @@
 ![Extendiendo la funcionalidad de webpack](https://ninjaaprendiendo.s3.us-east-2.amazonaws.com/articulos/extendiendo-la-funcionalidad-de-webpack.png)
 
 
-> Por: **Oscar García** - 21/04/2021
+> Por: **Oscar García** - 27/04/2021
 
 ### Extendiendo la funcionalidad de Webpack
 
