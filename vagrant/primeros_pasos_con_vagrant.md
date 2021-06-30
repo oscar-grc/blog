@@ -66,7 +66,7 @@ infraestructura como código``.
 
 ![Vagrant](https://ninjaaprendiendo.s3.us-east-2.amazonaws.com/articulos/primeros-pasos-vagrant-logotipo-vagrant.PNG)
 
-Instalar Vagrant es realmente sencillo solo tenemos que ir a la pagina oficial [https://www.vagrantup.com/downloads](https://www.vagrantup.com/downloads) y seguir los pasos indicados de acuerdo a tu sistema operativo, en el caso de Windows lo vamos a instalar dentro de **WSL2** **“Windows Subsystem for Linux”** lo que nos permite realizar la instalación mediante **apt-get**
+Instalar Vagrant es realmente sencillo solo tenemos que ir a la pagina oficial [https://www.vagrantup.com/downloads](https://www.vagrantup.com/downloads) y seguir los pasos indicados de acuerdo a tu sistema operativo, en el caso de Windows lo vamos a instalar dentro de **WSL2** **“Windows Subsystem for Linux”** lo que nos permite realizar la instalación mediante **apt-get** 
 
 ```
 curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
@@ -74,7 +74,7 @@ sudo apt-add-repository "deb [arch = amd64] https://apt.releases.hashicorp.com $
 
 sudo apt-get update && sudo apt-get install ``Vagrant``
 
-````
+```
 
 Una vez realizada la instalación podemos verificar la versión
 

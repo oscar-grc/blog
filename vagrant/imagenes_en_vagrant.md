@@ -10,7 +10,7 @@
 
 *Recuerda que este tutorial forma parte de una cadena de tutoriales que puedes encontrar en los siguientes enlaces:*
 
-- [Primeros pasos en Vagrant](https://github.com/oscar-grc/blog/blob/articles/vagrant/primeros_pasos_en_vagrant.md)
+- [Primeros pasos en Vagrant](https://github.com/oscar-grc/blog/blob/articles/vagrant/primeros_pasos_con_vagrant.md)
 - **Imágenes en Vagrant**
 - [Configurando nuestra maquina virtual](https://github.com/oscar-grc/blog/blob/articles/vagrant/configurando_nuestra_maquina_virtual.md)
 - [Configurando multiples maquinas](https://github.com/oscar-grc/blog/blob/articles/vagrant/configurando_multiples_maquinas_en_vagrant.md)
@@ -35,14 +35,16 @@
 - **Oracle VirtualBox:** 6.1.22
 - **Vagrant:** 2.2.16
 
+<br/>
+
 ---
 <br/>
 
 ## Imagenes en Vagrant
+<br />
 
-<br/>
 
-Continuando con esta serie de artículos acerca de Vagrant, veremos que son las imágenes en Vagrant, aunque en Vagrant no se llaman imágenes como tal, y en su lugar son llamadas `cajas` o `boxes`, en este articulo asumiremos el termino `imágenes` ya que es más común este nombre en maquinas virtuales.
+Continuando con esta serie de artículos acerca de Vagrant, veremos que son las imágenes en Vagrant y  aunque en Vagrant no se llaman imágenes como tal, y en su lugar son llamadas `cajas` o `boxes`, en este articulo asumiremos el termino `imágenes` ya que es más común este nombre en maquinas virtuales.
 
 Las imágenes en Vagrant son archivos con ciertas configuraciones compatibles con el proveedor de virtualización `"En nuestro caso Vitualbox"`, que además de contener la imagen del sistema a virtualizar contiene un par de formatos más que indican configuraciones y metadatos propios de Vagrant lo que permite que se pueda trabajar directamente desde Vagrant en nuestra terminal y no necesariamente desde la interfaz grafica del proveedor.
 
@@ -126,7 +128,11 @@ vagrant box list
 
 ![vagrant box list](https://ninjaaprendiendo.s3.us-east-2.amazonaws.com/articulos/vagrant-box-list.PNG)
 
-Si observamos los datos dentro de las imágenes instaladas, podemos ver que no tenemos ningún archivo empaquetado ya que cuando vagrant realiza la instalación de la imagen, esta se descomprime y se aloja en el directorio, pero si requerimos empaquetar la imagen para poder compartirla o cualquier otra situación Vagrant nos proporciona el siguiente comando:
+Si observamos los datos dentro de las imágenes instaladas, podemos ver que no tenemos ningún archivo empaquetado ya que cuando vagrant realiza la instalación de la imagen, esta se descomprime y se aloja en el directorio:
+
+![ubuntu detail](https://ninjaaprendiendo.s3.us-east-2.amazonaws.com/articulos/imagen-metadata.PNG)
+
+Pero si requerimos empaquetar la imagen para poder compartirla o cualquier otra situación Vagrant nos proporciona el siguiente comando:
 
 ```
 vagrant box repackage ubuntu/trusty64 virtualbox xxx.x
